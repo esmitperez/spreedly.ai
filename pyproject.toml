@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "spreedly-ai"
+version = "0.1.0"
+description = ""
+authors = ["Esmit Pérez <esmitperez@gmail.com>"]
+readme = "README.md"
+packages = [{include = "spreedly"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.0.146"
+pyyaml = "^6.0"
+openai = "^0.27.4"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
